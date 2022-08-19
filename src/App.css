@@ -12,16 +12,15 @@
 
 .word{
   font-size: 3rem;
-
-  display: grid;
-  grid-auto-flow: column;
-  gap: 1rem;
 }
 
 .wrongGuesses{
   font-size: 1.7rem;
 }
 .lives{
+  font-size: 1.7rem;
+}
+.words-left{
   font-size: 1.7rem;
 }
 

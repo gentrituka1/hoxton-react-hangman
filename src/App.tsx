@@ -42,6 +42,7 @@ function App() {
   let correctGuesses = guesses.filter((guess) => word.includes(guess));
 
   const lives = 6 - wrongGuesses.length;
+  const wordsLeft = (word.length + 1) - correctGuesses.length;
 
   let lost = lives === 0
   let won = word.split('').every(char => correctGuesses.includes(char))
@@ -75,6 +76,7 @@ function App() {
           <span key={index}>{correctGuesses.includes(char) ? char : "_"} </span>
         ))}
       </div>
+      <p className="words-left">Words left: {wordsLeft}</p>
       <p className="wrongGuesses">Wrong guesses({lives}): {wrongGuesses}</p>
       {lost ? (
         <div className="the-div">
