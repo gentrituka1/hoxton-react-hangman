@@ -38,8 +38,8 @@ function App() {
   useEffect(() => {
     if (lost || won) return;
 
-    const listener = (e) => {
-      let guess = e.key.toLowerCase();
+    function listener (event) {
+      let guess = event.key.toLowerCase();
 
       if (!letters.includes(guess)) return;
       if (guesses.includes(guess)) return;
