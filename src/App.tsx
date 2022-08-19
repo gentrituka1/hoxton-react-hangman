@@ -4,13 +4,29 @@ import "./App.css";
 const letters = "abcdefghijklmnopqrstuvwxyz";
 
 const words = [
-  "absurd",
-  "buzzing",
-  "funny",
-  "oxygen",
-  "pajama",
-  "peekaboo",
-  "zombie",
+  "nicolas",
+  "edmond",
+  "gentrit",
+  "elona",
+  "brunilda",
+  "elsi",
+  "enesi",
+  "kabil",
+  "xhulia",
+  "uran",
+  "aid",
+  "edona",
+  "arbenit",
+  "bedra",
+  "aris",
+  "eva",
+  "flori",
+  "darvin",
+  "igli",
+  "leonard",
+  "redi",
+  "taulant",
+  "teodora",
 ];
 
 function getRandomWord() {
@@ -61,14 +77,14 @@ function App() {
       </div>
       <p className="wrongGuesses">Wrong guesses({lives}): {wrongGuesses}</p>
       {lost ? (
-        <div className="lost-div">
+        <div className="the-div">
           <p>Sorry, you lost🤕 </p>
           <p>Word was: {word}</p>
           <button className="button" onClick={playAgain}>Play Again</button>
         </div>
       ) : null}
       {won ? (
-        <div>
+        <div className="the-div">
           <p>You win</p>
           <button className="button" onClick={playAgain}>Play Again</button>
         </div>
